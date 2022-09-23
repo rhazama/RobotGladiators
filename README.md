@@ -3,7 +3,8 @@
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
 ## Description
 A Pokemon inspired fighting game where users can battle against the computer until one party's Health Points drop to zero. Users can also upgrade their stats in the shop.
-</br>
+<br />
+
 You can checkout the application through the following link: 
 
 ## Table of Contents
@@ -17,7 +18,7 @@ You can checkout the application through the following link:
 ## Installation
 
 ## Usage
-For users looking to play fighting game.
+For users looking to play a pokemon inspired fighting game.
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 <br />
