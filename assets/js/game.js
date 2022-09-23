@@ -7,13 +7,15 @@ var randomNumber = function(min, max) {
   return value;
 };
 
+//function to check if player wants to fight or skip
 var fightOrSkip = function() {
-  // ask player if they'd like to fight or skip using fightOrSkip function
+  // ask player if they'd like to fight or run
   var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
 
-  // Enter the conditional recursive function call here!
+  // validate prompt answer
   if (promptFight === "" || promptFight === null) {
     window.alert("You need to provide a valid answer! Please try again.");
+    //use return to call it again and stop the rest of this function from running
     return fightOrSkip();
   }
   // if player picks "skip" confirm and then stop the loop
