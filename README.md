@@ -5,7 +5,7 @@
 A Pokemon inspired fighting game where users can battle against the computer until one party's Health Points drop to zero. Users can also upgrade their stats in the shop.
 <br />
 <br />
-You can checkout the application through the following link: 
+You can checkout the application through the following link: https://rhazama.github.io/robotGladiators/
 
 ## Table of Contents
 - [Description](#description)
