@@ -70,6 +70,7 @@ while (playerInfo.health > 0 && enemy.health > 0) {
       enemy.health +
       " health remaining."
     );
+
       // check enemy's health
       if (enemy.health <= 0) {
         window.alert(enemy.name + " has died!");
@@ -120,17 +121,21 @@ var startGame = function() {
 
   // fight each enemy robot by looping over them and fighting them one at a time
   for (var i = 0; i < enemyInfo.length; i++) {
+    //check player stats
+    console.log(playerInfo)
+
     // if player is still alive, keep fight next enemy
     if (playerInfo.health > 0) {
       // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
-      window.alert('Welcome to Robot Gladiators! Round ' + (i + 1));
+      window.alert("Welcome to Robot Gladiators! Round " + (i + 1));
       
-
       // pick new enemy to fight based on the index of the enemyInfo array
       var pickedEnemyObj = enemyInfo[i];
 
       // set health for picked enemy
       pickedEnemyObj.health = randomNumber(40, 60);
+
+      console.log(pickedEnemyObj);
 
       // pass the pickedEnemyObj object variable's value into the fight function, where it will assume the value of the enemy parameter
       fight(pickedEnemyObj);
@@ -166,14 +171,14 @@ var endGame = function() {
   if (highScore === null) {
     highScore = 0;
   }
+
   // if player has more money than the high score, player has new high score!
   if (playerInfo.money > highScore) {
     localStorage.setItem("highscore", playerInfo.money);
     localStorage.setItem("name", playerInfo.name);
 
     alert(playerInfo.name + " now has the high score of " + playerInfo.money + "!");
-  } 
-  else {
+  } else {
     alert(playerInfo.name + " did not beat the high score of " + highScore + ". Maybe next time!");
   }
 
