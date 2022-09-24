@@ -16,7 +16,7 @@ You can checkout the application through the following link:
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-
+To access the web application click on the link in the description above!
 ## Usage
 For users looking to play a pokemon inspired fighting game.
 ## License
