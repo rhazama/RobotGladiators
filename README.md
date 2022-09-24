@@ -13,7 +13,6 @@ You can checkout the application through the following link:
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 ## Installation
 To access the web application click on the link in the description above!
@@ -25,8 +24,6 @@ For users looking to play a pokemon inspired fighting game.
 This application is covered by the MIT license.
 ## Contributing
 Ryan Hazama
-## Tests
-n/a
 ## Questions
 Find me on GitHub: [rhazama](https://github.com/rhazama)<br />
 Send any questions you may have to: rhazama01@gmail.com<br />
