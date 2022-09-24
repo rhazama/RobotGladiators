@@ -187,8 +187,7 @@ var endGame = function() {
 
   if (playAgainConfirm) {
     startGame();
-  } 
-  else {
+  } else {
     window.alert("Thank you for playing Robot Gladiators! Come back soon!");
   }
 };
@@ -200,9 +199,10 @@ var shop = function() {
     "Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one 1 for REFILL, 2 for UPGRADE, or 3 for LEAVE."
   );
 
-  // use switch case to carry out action
-  debugger;
+  // convert answer from prompt to an actual number
   shopOptionPrompt = parseInt(shopOptionPrompt);
+
+  // use switch case to carry out action
   switch (shopOptionPrompt) {
     case 1:
       playerInfo.refillHealth();
@@ -220,14 +220,6 @@ var shop = function() {
   }
 };
 
-/* END GAME FUNCTIONS */
-
-/* GAME INFORMATION / VARIABLES */
-var playerInfo = {
-  name: getPlayerName(),
-   // other playerInfo properties and methods
-};
-
 // function to set name
 var getPlayerName = function() {
   var name = "";
@@ -241,9 +233,12 @@ var getPlayerName = function() {
   return name;
 };
 
+/* END GAME FUNCTIONS */
+/* GAME INFO / VARIABLES */
+
 // player information
 var playerInfo = {
-  name: window.prompt("What is your robot's name?"),
+  name: getPlayerName(),
   health: 100,
   attack: 10,
   money: 10,
@@ -257,8 +252,7 @@ var playerInfo = {
       window.alert("Refilling player's health by 20 for 7 dollars.");
       this.health += 20;
       this.money -= 7;
-    } 
-    else {
+    } else {
       window.alert("You don't have enough money!");
     }
   },
@@ -267,8 +261,7 @@ var playerInfo = {
       window.alert("Upgrading player's attack by 6 for 7 dollars.");
       this.attack += 6;
       this.money -= 7;
-    } 
-    else {
+    } else {
       window.alert("You don't have enough money!");
     }
   }
@@ -289,11 +282,6 @@ var enemyInfo = [
     attack: randomNumber(10, 14)
   }
 ];
-
-console.log(enemyInfo);
-console.log(enemyInfo[0]);
-console.log(enemyInfo[0].name);
-console.log(enemyInfo[0]['attack']);
 
 /* END GAME INFORMATION / VARIABLES */
 
